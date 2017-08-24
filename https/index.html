@@ -9,9 +9,15 @@
 <body>
   <script>
     var callback = function (data) {
+      console.log('https')
+      console.log(data)
+    }
+    var callback1 = function (data) {
+      console.log('http')
       console.log(data)
     }
   </script>
   <script src="https://api.zhwhxy.org.cn/api/category?callback=callback"></script>
+  <script src="http://api.zhwhxy.org.cn/api/category?callback=callback1"></script>
 </body>
 </html>
